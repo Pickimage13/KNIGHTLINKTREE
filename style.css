@@ -66,10 +66,10 @@ body {
 
 .header__icon-box img {
   border-radius: 50%;
-  border: .4rem solid #43192d;
+  border: .4rem solid gold;
   height: 80%;
   max-height: 13.2rem;
-  background-color: #43192d;
+  background-color: gold;
   margin-top: 2rem;
 }
 
