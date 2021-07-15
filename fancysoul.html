@@ -1,0 +1,148 @@
+<style>
+    /*CSS document*/
+* {
+  text-align: center;
+  text-decoration: none;
+}
+body {
+  background-color: #0f1442;
+  color: white;
+  padding: 5px;
+}
+div {
+  margin: 3px;
+}
+p {
+  font-size: 1.2rem;
+  margin-top: 3.2rem;
+  font-family: initial;
+}
+#perfil {
+  margin: 0 auto 3rem auto;
+}
+#perfil-image {
+  width: 8rem;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+#perfil-image:hover {
+  transform: scale(1.1);
+}
+#name {
+  margin: 0;
+  font-size: 2rem;
+  transition: 0.2s;
+  color: white;
+}
+#name:hover {
+  opacity: 0.8;
+}
+span {
+  opacity: 0.5;
+  color: white;
+  transition: 0.2s;
+}
+span:hover {
+  opacity: 0.8;
+}
+#sobre-mim {
+  margin: 5px;
+}
+#grid-container {
+  display: grid;
+  grid-gap: 60px 20px;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(3, 6rem);
+  justify-content: center;
+}
+.grid-item {
+  border-radius: 30px;
+  background-color: #2d2b7b;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.grid-item:hover {
+  background-color: #5464f8;
+  transform: scale(1.1);
+}
+i {
+  font-size: 4rem;
+  margin: 15px;
+  color: white;
+  transition: 0.5s;
+}
+#tree {
+  font-size: 1.5rem;
+  margin: 0;
+  color: green;
+}
+p#copy {
+  margin: 6rem auto 0 auto;
+}
+@media (min-width: 600px) {
+  #grid-container {
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: repeat(2, 6rem);
+  }
+  p#copy {
+    margin-top: 3rem;
+  }
+}
+
+</style>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+<link rel="stylesheet" href="css/style.css">
+<title>Fancy Soul</title>
+</head>
+
+<body>
+  <header>
+    <div id="perfil">
+      <a target="_blank" href="https://fancyesports.netlify.app">
+        <img src="https://i.ibb.co/YfM1NSB/Whats-App-Image-2021-07-13-at-00-07-10.jpg" alt="Perfil image" id="perfil-image">
+        <p id="name">
+          Fancy Soul Esports
+        </p>
+        <span>@fancsoul_esports</span>
+      </a>
+    </div>
+  </header>
+  <section id="grid-container">
+    <a onmouseenter="enter(`i#git`)" onmouseout="out(`i#git`)" target="_blank" href="https://fancyesports.netlify.app" class="grid-item">
+      <div><i id="git" class="fab fa-google"></i></div>
+      <span>Website</span>
+    </a>
+    <a onmouseenter="enter()" onmouseout="out()" target="_blank" href="https://discord.gg/GA9JgnGP" class="grid-item">
+      <div><i class="fab fa-discord"></i></div>
+      <span>Discord</span>
+    </a>
+    <a onmouseenter="enter()" onmouseout="out()" target="_blank" href="https://tiktok.com/@hheeyybitch" class="grid-item">
+      <div><i class="fab fa-tiktok"></i></div>
+      <span>Tiktok</span>
+    </a>
+    <a onmouseenter="enter()" onmouseout="out()" target="_blank" href="https://www.youtube.com/channel/UC-b3EVTxNULCAjyH4kwSpVA" class="grid-item">
+      <div><i class="fab fa-youtube"></i></div>
+      <span>Youtube</span>
+    </a>
+    <a onmouseenter="enter()" onmouseout="out()" target="_blank" href="https://www.instagram.com/fancysoul_esports/" class="grid-item">
+      <div><i class="fab fa-instagram"></i></div>
+      <span>instagram</span>
+    </a>
+    <a onmouseenter="enter()" onmouseout="out()" target="_blank" href="https://fancysoulesports@gmail.com" class="grid-item">
+      <div><i class="fas fa-envelope"></i></div>
+      <span>Gmail</span>
+    </a>
+  </section>
+  <footer>
+    <p id="copy">
+      <i id="tree" class="fas fa-gamepad"></i> Fancy Soul &copy;
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
